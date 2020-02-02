@@ -11,5 +11,6 @@ public class Asus implements Mobiles {
 	public void price() {
 		System.out.println("15000.00");
 	}
+	public void ma(){}
 
 }

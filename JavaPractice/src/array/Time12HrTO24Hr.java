@@ -1,6 +1,6 @@
 package array;
 
-public class ArrayPrint {
+public class Time12HrTO24Hr {
 
 	public static void main(String[] args) {
 	        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */

@@ -36,6 +36,7 @@ public class SumOfAdajacentElementsInSqareArray {
 		}
 		
 		
+		
 		return sum-a[x][y]; //except the element
 	}
 

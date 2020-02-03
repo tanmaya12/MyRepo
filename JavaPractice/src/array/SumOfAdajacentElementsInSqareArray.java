@@ -34,6 +34,7 @@ public class SumOfAdajacentElementsInSqareArray {
 				//}
 			}
 		}
+		System.out.print("\n");	
 		System.out.print("\n");		
 		return sum-a[x][y]; //except the element
 	}

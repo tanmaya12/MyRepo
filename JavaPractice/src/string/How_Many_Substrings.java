@@ -34,13 +34,14 @@ public class How_Many_Substrings {
     private static int allSubstrings(String s) {
     	System.out.println(s);
 		Set<String> set= new LinkedHashSet<String>();
-		//List<String> li=new ArrayList<String>();
+		//List<StringBuffer> li=new ArrayList<StringBuffer>();
 		if(s.length()==1) 
 			return 1;
 		int k=s.length()-1;
 		for (int i = 0; i < s.length(); i++) {
 			for (int j = k; j>=0; j--) {
 				set.add(s.substring(i, s.length()-j));
+				//set.add(s.substring(i, s.length()-j).toString());
 				//li.add(s.substring(i, s.length()-j));
 			}
 			k--;

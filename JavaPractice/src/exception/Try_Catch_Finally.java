@@ -1,4 +1,4 @@
-package java8;
+package exception;
 
 public class Try_Catch_Finally {
 

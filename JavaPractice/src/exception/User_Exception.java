@@ -3,7 +3,7 @@ package exception;
 class MyException extends Exception{
 
 	public MyException(String string) {
-		System.out.println("Ha haa haa");
+		System.out.println("Ha haa haa Error");
 	}
 	
 }

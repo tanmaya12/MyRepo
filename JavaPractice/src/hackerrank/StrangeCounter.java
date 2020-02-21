@@ -8,19 +8,33 @@ import java.util.Scanner;
 public class StrangeCounter {
 // Complete the strangeCounter function below.
 	static long strangeCounter(long t) {
-		long value = 3, temp = 0, count = 1;
-		for (long i = 0; i < t; i++) {
-			if (count <= t && (2 * count + 1) >= t) {
-				long d = t - count;
-				value -= d;
-				temp = value;
+//		long value = 3, temp = 0, count = 1;
+//		for (long i = 0; i < t; i++) {
+//			if (count <= t && (2 * count + 1) >= t) {
+//				long d = t - count;
+//				value -= d;
+//				temp = value;
+//				break;
+//			} else {
+//				count = count + 3 * ((long) Math.pow(2, i));
+//				value *= 2;
+//			}
+//		}
+//		return temp;
+		long d = 3;
+		long ans = 0;
+		while (true) {
+			if (t <= d) {
+				ans = d + 1 - t;
+				//System.out.println(ans);
 				break;
 			} else {
-				count = count + 3 * ((long) Math.pow(2, i));
-				value *= 2;
+				t -= d;
+				d = 2 * d;
+				System.out.println(t+" "+d);
 			}
 		}
-		return temp;
+		return ans;
 
 	}
 
@@ -33,7 +47,7 @@ public class StrangeCounter {
 		scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
 		long result = strangeCounter(t);
-
+		//System.out.println(String.valueOf(result));
 		bufferedWriter.write(String.valueOf(result));
 		bufferedWriter.newLine();
 

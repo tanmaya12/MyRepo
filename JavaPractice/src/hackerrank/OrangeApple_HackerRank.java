@@ -1,4 +1,4 @@
-package java8;
+package hackerrank;
 
 import java.util.Scanner;
 

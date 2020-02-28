@@ -1,4 +1,4 @@
-package array;
+package hackerrank;
 
 public class Time12HrTO24Hr {
 

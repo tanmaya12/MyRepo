@@ -10,10 +10,10 @@ public class Try_Break {
 				System.out.println(i);
 				if(i==4)
 					break;
-			}
-			finally {
-				System.out.println("inner f");
-			}
+				}
+				finally {
+					System.out.println("inner f");
+				}
 			}//for
 			System.out.println("end try");
 		} finally {

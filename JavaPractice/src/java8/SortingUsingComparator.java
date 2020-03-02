@@ -17,13 +17,7 @@ public class SortingUsingComparator {
 		   arraylist.stream().sorted((a,b)->a.getName().compareTo(b.getName())).forEach(System.out::println);
 		   System.out.println("-------------Percentage-------------"); 
 		   arraylist.stream().sorted((a,b)->(int)(a.getPercentage()- b.getPercentage())).forEach(System.out::println);
-		
-		int id= 209;//this id present or not in list of Employee
-		for (Employee emp : arraylist) {
-			if (emp.getId()==id) {
-				System.out.println("found: "+emp.getName());
-			}
-		}
+
 	}
 
 }
